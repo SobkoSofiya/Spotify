@@ -7,6 +7,62 @@
 
 import SwiftUI
 
+struct Vi:View {
+    @State var item = 1
+  
+    init(){
+        UITabBar.appearance().barTintColor = UIColor(Color("br"))
+        UITabBar.appearance().unselectedItemTintColor = UIColor.white
+    }
+    var body: some View{
+        TabView(selection:$item){
+            ContentView().tabItem { VStack{
+                Image(systemName: "homekit")
+                Text("Главная").font(.custom("", size: 12))
+            } }.tag(1)
+            n3().tabItem { VStack{
+                Image(systemName: "homekit")
+                Text("Финансы").font(.custom("", size: 12))
+            } }.tag(2)
+            n4().tabItem { VStack{
+                Image(systemName: "homekit")
+                Text("Тарифы и услуги").font(.custom("", size: 12))
+            } }.tag(3)
+            n2().tabItem { VStack{
+                Image("men")
+                Text("Ещё").font(.custom("", size: 12))
+            } }.tag(4)
+        }.accentColor(Color("yel"))
+    }
+}
+
+
+
+struct n2:View {
+    var body: some View{
+        ZStack{
+            Text("Ещё")
+        }
+    }
+    
+}
+
+struct n3:View {
+    var body: some View{
+        ZStack{
+            Text("Финансы")
+        }
+    }
+}
+
+struct n4:View {
+    var body: some View{
+        ZStack{
+            Text("Тарифы и услуги")
+        }
+    }
+}
+
 struct ContentView: View {
     var body: some View {
         ZStack{
@@ -33,13 +89,14 @@ struct ContentView: View {
                     }
                 }.frame(width: UIScreen.main.bounds.width, height: 100, alignment: .center)
                 ScrollView(.vertical){
+                    
                     V()
                     v2()
                     v3()
                    
                    v4()
 //                    v5
-                }
+                }.frame(maxHeight: .infinity)
                 
                 Spacer()
             }.offset( y: 30)
