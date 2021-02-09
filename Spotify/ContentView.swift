@@ -77,7 +77,7 @@ struct ContentView: View {
                             RoundedRectangle(cornerRadius: 10).strokeBorder(Color.black.opacity(0.2), lineWidth: 1.5).frame(width: 200, height: 45, alignment: .center).foregroundColor(Color("l"))
                             HStack{
                                 Text("+7 909 908 62 88").padding(.leading)
-                                Image(systemName: "chevron.down").resizable().frame(width: 20, height: 10, alignment: .center).foregroundColor(.gray).opacity(0.6).padding(5)
+                                Image(systemName: "chevron.down").resizable().frame(width: 11, height: 7, alignment: .center).foregroundColor(.gray).shadow(radius: 10 ).opacity(0.6).padding(5)
                                 
                                
                             }.frame(width: 200, height: 50, alignment: .center)
