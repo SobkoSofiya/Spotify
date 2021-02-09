@@ -178,27 +178,27 @@ struct v2:View {
                 VStack(spacing:0){
                     Text("7,53").foregroundColor(.black).font(.custom("", size: 30))
                     Text("гигабайт").foregroundColor(.black).font(.custom("", size: 18))
-                    RoundedRectangle(cornerRadius: 30).frame(width: 90, height: 5, alignment: .center).foregroundColor(.green).padding(.top,5)
+                    RoundedRectangle(cornerRadius: 30).frame(width: 90, height: 5, alignment: .center).foregroundColor(Color("een")).padding(.top,5)
                 }
                 VStack(spacing:0){
                     Text("479").foregroundColor(.black).font(.custom("", size: 30))
                     Text("минут").foregroundColor(.black).font(.custom("", size: 18))
-                    RoundedRectangle(cornerRadius: 30).frame(width: 90, height: 5, alignment: .center).foregroundColor(.green).padding(.top,5)
+                    RoundedRectangle(cornerRadius: 30).frame(width: 90, height: 5, alignment: .center).foregroundColor(Color("een")).padding(.top,5)
                 }
                 VStack(spacing:0){
                     Text("120").foregroundColor(.black).font(.custom("", size: 30))
                     Text("SMS").foregroundColor(.black).font(.custom("", size: 18))
-                    RoundedRectangle(cornerRadius: 30).frame(width: 90, height: 5, alignment: .center).foregroundColor(.green).padding(.top,5)
+                    RoundedRectangle(cornerRadius: 30).frame(width: 90, height: 5, alignment: .center).foregroundColor(Color("een")).padding(.top,5)
                 }
                 VStack(spacing:0){
                     Text("7,53").foregroundColor(.black).font(.custom("", size: 30))
                     Text("гигабайт").foregroundColor(.black).font(.custom("", size: 18))
-                    RoundedRectangle(cornerRadius: 30).frame(width: 90, height: 5, alignment: .center).foregroundColor(.green).padding(.top,5)
+                    RoundedRectangle(cornerRadius: 30).frame(width: 90, height: 5, alignment: .center).foregroundColor(Color("een")).padding(.top,5)
                 }
                 VStack(spacing:0){
                     Text("7,53").foregroundColor(.black).font(.custom("", size: 30))
                     Text("гигабайт").foregroundColor(.black).font(.custom("", size: 18))
-                    RoundedRectangle(cornerRadius: 30).frame(width: 90, height: 5, alignment: .center).foregroundColor(.green).padding(.top,5)
+                    RoundedRectangle(cornerRadius: 30).frame(width: 90, height: 5, alignment: .center).foregroundColor(Color("een")).padding(.top,5)
                 }
                 }
             }.padding()
