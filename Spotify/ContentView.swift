@@ -119,16 +119,19 @@ struct V:View {
                 RoundedRectangle(cornerRadius: 15)
                     .frame(width: 280, height: 170, alignment: .center).foregroundColor(Color("yel"))
                     VStack(alignment:.leading){
+                        HStack{
                         Text("Баланс")
+                            Image("pro")
+                        }
                         Spacer()
                         HStack(alignment: .center, spacing:0){
                             Text("54").foregroundColor(Color("pin")).font(.custom("", size: 30))
                             Text(",9 ₽").foregroundColor(Color("pin")).offset(y: 3)
                             Spacer()
                             ZStack{
-                                RoundedRectangle(cornerRadius: 30).frame(width: 150, height: 55, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/).foregroundColor(.white)
+                                RoundedRectangle(cornerRadius: 30).frame(width: 150, height: 55, alignment: .center).foregroundColor(.white).shadow(radius: 2)
                                 Text("Пополнить").foregroundColor(.black).font(.custom("", size: 20))
-                            }
+                            }.offset(x: 10)
                         } .frame(width: 240, alignment: .center)
                         HStack(spacing:5){
                             Image("pro").resizable().frame(width: 30, height: 30, alignment: .center)
@@ -141,22 +144,15 @@ struct V:View {
                 RoundedRectangle(cornerRadius: 15)
                     .frame(width: 280, height: 170, alignment: .center).foregroundColor(Color("br"))
                     VStack(alignment:.leading){
-                        Text("Баланс").foregroundColor(.white)
+                        Text("Дебетовая").foregroundColor(.white).bold().font(.custom("", size: 20))
                         Spacer()
-                        HStack(spacing:0){
-                        Text("54").foregroundColor(.white)
-                            Text(",9р").foregroundColor(.white)
-                            Spacer()
-                            ZStack{
-                                RoundedRectangle(cornerRadius: 30).frame(width: 150, height: 65, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/).foregroundColor(.white)
-                                Text("Пополнить").foregroundColor(.black)
-                            }
-                        } .frame(width: 240, alignment: .center)
-                        HStack(spacing:5){
-                            Image("pro").resizable().frame(width: 30, height: 30, alignment: .center)
-                            Text("Последние расходы").font(.custom("", size: 15)).foregroundColor(.white)
-                            Image(systemName: "chevron.forward").foregroundColor(.white)
-                        }
+                       
+                        Text("Кешбэк до").foregroundColor(.white).opacity(0.6).offset( y: -40)
+                        Text("До 5% на оснвной аккаунт").foregroundColor(.white).opacity(0.6).offset( y: -30)
+                          
+                        Text("Подробнее").foregroundColor(Color("yel").opacity(0.8)).font(.custom("", size: 17))
+                            
+                        
                     }.padding() .frame(height: 170, alignment: .center)
                 }
             }
@@ -226,21 +222,21 @@ struct v3:View {
                     RoundedRectangle(cornerRadius: 15).frame(width: 120, height: 125, alignment: .center).foregroundColor(.gray).opacity(0.08)
                     VStack(alignment:.leading){
                         Image("pro").resizable().frame(width: 40, height: 40, alignment: .center)
-                        Text("Новая\nSIM-карта").foregroundColor(.gray).font(.custom("", size: 15))
+                        Text("Новая\nеSIM-карта").foregroundColor(.gray).font(.custom("", size: 15))
                     }.padding(.leading)
                 }
                 ZStack(alignment:.leading){
                     RoundedRectangle(cornerRadius: 15).frame(width: 120, height: 125, alignment: .center).foregroundColor(.gray).opacity(0.08)
                     VStack(alignment:.leading){
                         Image("pro").resizable().frame(width: 40, height: 40, alignment: .center)
-                        Text("Новая\nSIM-карта").foregroundColor(.gray).font(.custom("", size: 15))
+                        Text("Домашний\nинтернет").foregroundColor(.gray).font(.custom("", size: 15))
                     }.padding(.leading)
                 }
                 ZStack(alignment:.leading){
                     RoundedRectangle(cornerRadius: 15).frame(width: 120, height: 125, alignment: .center).foregroundColor(.gray).opacity(0.08)
                     VStack(alignment:.leading){
                         Image("pro").resizable().frame(width: 40, height: 40, alignment: .center)
-                        Text("Новая\nSIM-карта").foregroundColor(.gray).font(.custom("", size: 15))
+                        Text("Перенести\nSIM-номер").foregroundColor(.gray).font(.custom("", size: 15))
                     }.padding(.leading)
                 }
                 ZStack(alignment:.leading){
